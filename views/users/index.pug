@@ -1,0 +1,8 @@
+form(action='/users/search', method='GET')
+  input(type='text' name='q')
+  button Search
+a(href='/users/create') Create
+.hello user
+  ul
+  each user in users
+    li=user.job
