@@ -2,8 +2,9 @@ h1 Create user
 form(action='/users/create', method='POST')
   
   label Job
-  input(type = 'text', name = 'job')
+  input(type = 'text', name = 'name')
   button Create
 ul
   each user in users
-    li=user.job
+    li=user.name
+    a(href="" + user.id) View
